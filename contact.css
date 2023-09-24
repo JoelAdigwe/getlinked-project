@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  overflow: hidden;
+  max-width: 1440px;
+  margin: 0 auto;
+  color: white;
+  font-family: Montserrat, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: #150E28;
+  background-repeat: no-repeat;
+}
+html body .grad-btn:hover {
+  transition: all 0.5s ease-in-out;
+  background-image: linear-gradient(to right, #ab3082, rgb(172, 3, 172), #683ba2);
+}
+html body header {
+  position: sticky;
+  top: 0;
+  background: #150E28;
+  z-index: 50;
+}/*# sourceMappingURL=contact.css.map */

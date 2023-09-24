@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackathon</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header class="justify-between items-center h-[80px] xl:px-24 lg:px-20 md:px-16 px-4 hidden lg:flex">
+        <div class="logo xl:text-3xl lg:text-2xl text-xl font-black hidden lg:block">
+            get<span class="text-[#D434FE]">linked</span>
+        </div>
+        <nav class="xl:gap-10 lg:gap-6 items-center hidden xl:flex lg:flex ">
+            <a href="./timeline.html" class="nav-links">Timeline</a>
+            <a href="" class="nav-links">Overview</a>
+            <a href="" class="nav-links">FAQs</a>
+            <a href="" class="nav-links">Contact</a>
+            <a href="register.html"
+                class="grad-btn nav-links bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[172px] h-[53px] rounded flex justify-center items-center">Register</a>
+        </nav>
+
+    </header>
+    <main class="flex relative flex-col-reverse lg:flex-row gap-10 items-center lg:h-[87vh] xl:px-24 lg:px-20 md:px-16 px-4 py-4">
+        <section class="lg:w-[25%]">
+            <div class="hidden lg:block">
+                <h1 class="text-[#D434FE] text-3xl font-bold">Get in touch</h1>
+                <p class="my-4">Contact<br>Information</p>
+                <p class="my-4">5 Chief Woriji Close,<br> Rivers State</p>
+                <p class="my-4">Call Us : 08163617315</p>
+                <p class="my-4">We are open from Monday-Friday <br> 08:00am - 05:00pm</p>
+            </div>
+            <div class="">
+                <p class="font-bold text-[#D434FE]  text-center lg:text-left">Share on</p>
+                <span class="flex gap-3"><a href="" target="_blank"><i
+                            class="fa-brands fa-instagram text-[25px]"></i></a><a
+                        href="https://twitter.com/joelofIsheagu?s=08" target="_blank"><i
+                            class="fa-brands fa-x-twitter  text-[25px]"></i></a><a
+                        href="" target="_blank"><i
+                            class="fa-brands fa-facebook-f  text-[25px]"></i></a><a
+                        href="https://www.linkedin.com/in/joel-adigwe-9b1484276" target="_blank"><i
+                            class="fa-brands fa-linkedin-in text-[25px]"></i></a></span>
+            </div>
+        </section>
+     
+        <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px]  lg:w-[700px] absolute z-[-1] top-[-1%] lg:top-[-10%] lg:left-[-20%] xl:left-[-10%] left-[-25%]">
+        <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] lg:w-[600px] absolute z-[-1] hidden lg:block  bottom-[-10%] lg:bottom-[-20%] lg:right-[-25%] right-[-60%]">
+
+        <section class="lg:w-[55%] lg:bg-[#3f2e694b] rounded-xl xl:px-20 lg:px-14 lg:py-10">
+
+            <!-- This is the back btn -->
+            <a href="./index.html"
+                class="lg:hidden flex justify-center items-center w-[33px] h-[33px] rounded-full border border-[#D434FE] mb-10">
+                <i class="fa-solid fa-angle-left"></i>
+            </a>
+
+            <h2 class="text-[#D434FE] text-xl font-bold mb-4 pr-[50px] xl:pr-[200px] lg:pr-[50px]">Questions or need
+                assistance? Let us know about it!</h2>
+            <p class="lg:hidden mb-4">Email us below to any question related to our event</p>
+            <form action="" id="contactForm" method="post">
+                <input type="text" name="firstname" id="firstName" placeholder="First Name" required
+                    class="outline-0 w-full h-[37px] border pl-4 rounded bg-transparent block">
+                <input type="email" placeholder="Mail" id="email" required
+                    class="outline-0 w-full h-[37px] my-[22px] border pl-4 rounded bg-transparent block">
+                <textarea name="" id="messageBox" cols="30" required rows="4"   placeholder="Message" 
+                    class="outline-0 w-full border p-4 rounded bg-transparent block"></textarea>
+                <button
+                    class="nav-links bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[172px] h-[53px] rounded mt-[21px] mx-auto block">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="contact.js"></script>
+</body>
+
+</html>

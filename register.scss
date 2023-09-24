@@ -1,0 +1,264 @@
+//reset css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//variables
+$primary-color: linear-gradient(to right, #FE34B9, #903AFF);
+$bg-color: #150E28;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&family=Volkhov&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&family=Voces&family=Volkhov&display=swap');
+
+$font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+html {
+
+    body {
+        // overflow-x: hidden;
+        max-width: 1440px;
+        margin: 0 auto;
+        color: white;
+        font-family: $font-family ;
+        background: $bg-color;
+        background-repeat: no-repeat;
+
+        .grad-btn {
+
+
+            border: 2px solid #9A39FF;
+
+            &:hover {
+                @include transition-ease;
+                background-image: linear-gradient(to right, #ab3082, rgb(172, 3, 172), #683ba2);
+            }
+        }
+
+
+        header {
+            position: sticky;
+            top: 0;
+            background: $bg-color;
+            z-index: 50;
+
+            .hamburger-menu {
+
+                .hamburger {
+                    position: absolute;
+                    cursor: pointer;
+                    @include transition-ease;
+                    background-color: white;
+
+                    &::before {
+                        content: "";
+                        width: 19px;
+                        position: absolute;
+                        bottom: 10px;
+                        border-radius: 10px;
+                        height: 5px;
+                        background-color: white;
+                    }
+
+                    &::after {
+                        content: "";
+                        width: 19px;
+                        position: absolute;
+                        top: 10px;
+                        border-radius: 10px;
+                        right: 0;
+                        height: 5px;
+                        background-color: white;
+                    }
+
+                    &.open {
+                        @include transition-ease;
+                        transform: rotate(180deg);
+                        background: transparent;
+
+                        &::before {
+                            width: 28px;
+                            transform: rotate(45deg) translate(10px, 5px);
+                        }
+
+                        &::after {
+                            width: 28px;
+                            transform: rotate(-44deg) translate(2px, -10px);
+                        }
+
+                    }
+
+                }
+
+                &.open-fixed {
+                    position: fixed;
+                }
+            }
+
+            .hamburger-menu-border {
+                border: 2px solid #903AFF;
+                // border-image: linear-gradient(to bottom, #903AFF, #FE34B9);
+                background-clip: text;
+                border-radius: 50%;
+                -webkit-text-fill-color: transparent;
+                border-image-slice: 1;
+
+            }
+
+            .mobile-nav {
+                @include transition-ease;
+                visibility: hidden;
+                transform: translateY(-100%);
+
+                &.open {
+                    visibility: visible;
+                    @include transition-ease;
+                    transform: translateY(0);
+                }
+
+                .mobile-nav-links {
+                    @include transition-ease;
+                    transform: translateX(-100%);
+
+                    &.open {
+                        @include transition-ease;
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+
+        main {
+
+            .vuzual-logo {
+                font-family: voces;
+
+                span {
+
+                    b {
+                        color: red;
+                        font-family: 'Volkhov';
+                    }
+                    div{
+                        font-size: 30%;
+                    }
+                }
+            }
+
+            .hero-section {
+
+                .hero-left {
+
+                    .timer {
+                        font-family: 'Unica One';
+                    }
+                }
+            }
+
+            // .intro{
+            //     overflow: hidden;
+
+            //     .intro-left{
+            //         @include transition-ease;
+            //         transform: translateX(-110%);
+
+            //         &.open{
+            //             @include transition-ease;
+            //             transform: translateX(0);
+            //         }
+            //     }
+            //     .intro-right{
+            //         @include transition-ease;
+            //         transform: translateX(120%);
+
+            //         &.open{
+            //             @include transition-ease;
+            //             transform: translateX(0);
+            //         }
+            //     }
+            // }
+            // .guidelines{
+            //     overflow: hidden;
+
+            //     .guidelines-left{
+            //         @include transition-ease;
+            //         transform: translateX(-120%);
+
+            //         &.open{
+            //             @include transition-ease;
+            //             transform: translateX(0);
+            //         }
+            //     }
+            //     .guidelines-right{
+            //         @include transition-ease;
+            //         transform: translateX(120%);
+
+            //         &.open{
+            //             @include transition-ease;
+            //             transform: translateX(0);
+            //         }
+            //     }
+            // }
+
+            .FAQs-dropdown {
+
+
+                #frequently-ask-dropdown-item1 {
+                    display: none;
+
+                    &.open {
+                        display: block;
+                    }
+                }
+
+                #frequently-ask-dropdown-item2 {
+                    display: none;
+
+                    &.open {
+                        display: block;
+                    }
+                }
+
+                #frequently-ask-dropdown-item3 {
+                    display: none;
+
+                    &.open {
+                        display: block;
+                    }
+                }
+
+                #frequently-ask-dropdown-item4 {
+                    display: none;
+
+                    &.open {
+                        display: block;
+                    }
+                }
+
+                #frequently-ask-dropdown-item5 {
+                    display: none;
+
+                    &.open {
+                        display: block;
+                    }
+                }
+
+                #frequently-ask-dropdown-item6 {
+                    display: none;
+
+                    &.open {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}

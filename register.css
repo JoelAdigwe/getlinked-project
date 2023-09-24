@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&family=Volkhov&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&family=Voces&family=Volkhov&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html body {
+  max-width: 1440px;
+  margin: 0 auto;
+  color: white;
+  font-family: Montserrat, "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background: #150E28;
+  background-repeat: no-repeat;
+}
+html body .grad-btn {
+  border: 2px solid #9A39FF;
+}
+html body .grad-btn:hover {
+  transition: all 0.5s ease-in-out;
+  background-image: linear-gradient(to right, #ab3082, rgb(172, 3, 172), #683ba2);
+}
+html body header {
+  position: sticky;
+  top: 0;
+  background: #150E28;
+  z-index: 50;
+}
+html body header .hamburger-menu .hamburger {
+  position: absolute;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  background-color: white;
+}
+html body header .hamburger-menu .hamburger::before {
+  content: "";
+  width: 19px;
+  position: absolute;
+  bottom: 10px;
+  border-radius: 10px;
+  height: 5px;
+  background-color: white;
+}
+html body header .hamburger-menu .hamburger::after {
+  content: "";
+  width: 19px;
+  position: absolute;
+  top: 10px;
+  border-radius: 10px;
+  right: 0;
+  height: 5px;
+  background-color: white;
+}
+html body header .hamburger-menu .hamburger.open {
+  transition: all 0.5s ease-in-out;
+  transform: rotate(180deg);
+  background: transparent;
+}
+html body header .hamburger-menu .hamburger.open::before {
+  width: 28px;
+  transform: rotate(45deg) translate(10px, 5px);
+}
+html body header .hamburger-menu .hamburger.open::after {
+  width: 28px;
+  transform: rotate(-44deg) translate(2px, -10px);
+}
+html body header .hamburger-menu.open-fixed {
+  position: fixed;
+}
+html body header .hamburger-menu-border {
+  border: 2px solid #903AFF;
+  -webkit-background-clip: text;
+          background-clip: text;
+  border-radius: 50%;
+  -webkit-text-fill-color: transparent;
+  border-image-slice: 1;
+}
+html body header .mobile-nav {
+  transition: all 0.5s ease-in-out;
+  visibility: hidden;
+  transform: translateY(-100%);
+}
+html body header .mobile-nav.open {
+  visibility: visible;
+  transition: all 0.5s ease-in-out;
+  transform: translateY(0);
+}
+html body header .mobile-nav .mobile-nav-links {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(-100%);
+}
+html body header .mobile-nav .mobile-nav-links.open {
+  transition: all 0.5s ease-in-out;
+  transform: translateX(0);
+}
+html body main .vuzual-logo {
+  font-family: voces;
+}
+html body main .vuzual-logo span b {
+  color: red;
+  font-family: "Volkhov";
+}
+html body main .vuzual-logo span div {
+  font-size: 30%;
+}
+html body main .hero-section .hero-left .timer {
+  font-family: "Unica One";
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item1 {
+  display: none;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item1.open {
+  display: block;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item2 {
+  display: none;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item2.open {
+  display: block;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item3 {
+  display: none;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item3.open {
+  display: block;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item4 {
+  display: none;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item4.open {
+  display: block;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item5 {
+  display: none;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item5.open {
+  display: block;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item6 {
+  display: none;
+}
+html body main .FAQs-dropdown #frequently-ask-dropdown-item6.open {
+  display: block;
+}/*# sourceMappingURL=register.css.map */

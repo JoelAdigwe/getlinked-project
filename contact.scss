@@ -1,0 +1,49 @@
+//reset css
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+//variables
+$primary-color: linear-gradient(to right, #FE34B9, #903AFF);
+$bg-color:  #150E28;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+
+$font-family: Montserrat, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+@mixin transition-ease {
+    transition: all 0.5s ease-in-out;
+}
+
+html {
+
+    body {
+        overflow: hidden;
+        max-width: 1440px;
+        margin: 0 auto;
+        color: white;
+        font-family: $font-family ;
+        background: $bg-color;
+        background-repeat: no-repeat;
+
+        .grad-btn {
+
+            &:hover {
+                @include transition-ease;
+                background-image: linear-gradient(to right, #ab3082, rgb(172, 3, 172), #683ba2);
+            }
+        }
+
+
+        header {
+            position: sticky;
+            top: 0;
+            background: $bg-color;
+            z-index: 50;
+        }
+
+    }
+}

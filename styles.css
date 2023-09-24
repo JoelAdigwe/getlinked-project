@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@300&family=Unica+One&display=swap');
+
+
+body{
+    background-color: #150E28;
+    max-width: 1440px;
+}
+
+.navss{
+    font-family: 'Montserrat';
+}
+.linked{
+    color: #D434FE;
+}
+
+header{
+    border-bottom: 1px solid  rgba(255, 255, 255, 0.18);
+    position: relative;
+    z-index: 30;
+    top: 0;
+}
+
+.get{
+    font-family: 'poppins'
+}
+.bg{
+    background: linear-gradient(270deg, #903AFF 0%, #D434FE 56.42%, #FF26B9 99.99%, #FE34B9 100%);
+    flex-shrink: 0;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.italic{
+    font-family: 'Montserrat';
+}
+
+.hero-section{
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.num{
+    color: #D434FE;
+}
+.hero-small{
+    font-family: 'Montserrat';
+}
+.timer{
+    font-family: 'unica one';
+}
+
+/* imtro section */
+.intro{
+    border-bottom: rgba(255, 255, 255, 0.18);
+}
+.intro-big{
+    font-family: 'poppins';
+}
+.intro-small{
+    font-family: 'montserrat';
+}
+
+/* guidelines */
+.guidelines-small{
+    font-family: 'montserrat';
+}
+.guidelines-big{
+    font-family: 'poppins';
+}
+
+
+/* cwfi section */
+.cwfi-big{
+    font-family: 'poppins';
+}
+article{
+    font-family: 'montserrat';
+}
+
+#judging{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* questions section */
+.questi{
+    font-family: 'montserrat';
+}
+.qheader{
+    font-family: 'montserrat';
+}
+.FAQs-dropdown{
+    font-family: 'montserrat';
+}
+
+/* timeline section */
+#timeline{
+    font-family: 'montserrat';
+    color: white;
+}
+
+/* prices */
+#prize{
+    color: white;
+    font-family: 'montserrat';
+}
+
+/* partners */
+#partners{
+    font-family: 'montserrat';
+}
+/* pri */
+#privacy{
+    color: #fff;
+    font-family: 'montserrat';
+}
+/* footer */
+footer{
+    color: #fff;
+    font-family: 'montserrat';
+}
+@media screen and (max-width: 900px){
+    .mobile-menu {
+        background-color: #150E28;
+        display: none;
+        position: absolute;
+        right: 5px;
+        top: 0;
+        width: 348px;
+        height: 492px;
+        /* border-bottom: 1px solid #fff; */
+    }
+
+        .mobile-navs {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center;  */
+            color: #fff;
+            padding: 15px 60px;
+            margin: auto;
+        }
+
+   .show-menu{
+    display: block;
+    transition: 60s ease;
+   }
+
+   .hero-section{
+    border-bottom: none;
+   }
+
+}  

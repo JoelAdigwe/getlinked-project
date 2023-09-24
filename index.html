@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackaton</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="mx-auto">
+   <header class="mx-auto px-6 xl:px-24  lg:px-20 pt-8 pb-6 flex justify-evenly  items-center ">
+      <div class="flex justify-between items-center w-full">
+        <p class="text-[16px] md:text-[36px] text-white font-bold get">get<span class="linked">linked</span></p>
+        <button class=" lg:hidden p-2 hamburger-m" onclick="toggleMenu()">
+        <img src="./images/ham.png" alt="" class="ham">
+        </button>
+      </div>
+      <nav class="hidden lg:flex items-center xl:mr-[90px]">
+        <a href="" class="text-white text-[16px] navss font-medium px-6">Timeline</a>
+        <a href="" class="text-white text-[16px] navss font-medium px-6">Overview</a>
+        <a href="" class="text-white text-[16px] navss font-medium px-6">FAQs</a>
+        <a href="contact.html" class="text-white text-[16px] navss font-medium px-6 mr-6">Contact</a>
+      </nav>
+     <a href="register.html"><button class="hidden lg:block rounded-[4px] bg text-white text-[16px] font-medium w-[172px] h-[53px]">Register</button></a>
+      <!-- mobile menu -->
+      <div class="mobile-menu fixed" id="mob-menu">
+        <button class="absolute right-0 mt-[12px] p-8"  onclick="toggleMenu()"><img src="./images/close.png" alt=""></button>
+        <div class="pt-[85px]">
+        <a href="index.html" class="mobile-navs">Timeline</a>
+        <a href="about.html" class="mobile-navs">Overview</a>
+        <a href="expertise.html" class="mobile-navs">FAQs</a>
+        <a href="contact.html" class="mobile-navs">Contact</a>
+        <button class="ml-[60px] rounded-[4px] bg text-white text-[16px] font-medium w-[172px] h-[53px]">Register</button>
+        </div>
+    </div>
+   </header>
+   <main>
+    <section class="hero-section xl:pl-24 lg:pl-20">
+        <div class="flex xl:justify-end lg:justify-end justify-center w-[100%] mt-4">
+            <h1 class="text-[16px] md:text-[36px] lg:text-[25px] xl:text-[36px] font-bold italic text-white relative xl:pr-24 lg:pr-24">
+                Igniting a Revolution
+                in HR Innovation <img src="./images/curved.png" alt=""
+                class="absolute xl:right-[] lg:right-[90px] right-0 xl:w-[253px] lg:w-[165px] w-[110px]"></h1>
+        </div>    
+        <div class="flex flex-col lg:flex-row">
+            <div class="xl:w-[50%] lg:w-[50%] w-[100%] relative pt-[30px] xl:pt-[55px]  flex flex-col justify-center items-center flex flex-col justify-center items-center xl:items-start lg:items-start">
+                <img src="./images/star.png" alt="" class="absolute top-[12px] mr-[105px] md:mr-0 md:top-[0] md:left-[50px] w-[10px] h-[12px] md:w-[26px] md:h-[32px]">
+                <img src="./images/star2.png" alt="" class="absolute top-[215px] ml-[195px] md:ml-0 md:top-[80px] md:right-[0] w-[6px] h-[8px] md:w-[26px] md:h-[32px]">
+                <img src="./images/star3.png" alt="" class="absolute top-[12px] ml-[250px] md:top-[500px] lg:top-[400px] xl:top-[500px] md:left-[400px] w-[6px] h-[8px] md:w-[26px] md:h-[32px]">
+                <img src="./images/Creative.png" alt="" class="ml-[170px] xl:ml-0 top-[20px] absolute md:top-[23px] md:right-[150px] lg:top-[58px] lg:right-[60px] xl:top-[59px] xl:left-[470px] w-[18px] h-[26px] md:w-[40px] md:h-[50px] xl:w-[53px] xl:h-[73px]">
+                <p class="text-[32px] font-bold text-white md:text-[80px] lg:text-[56px] xl:text-[80px] leading-0">getlinked Tech</p>
+                <p class="pr-[45px] text-white text-[32px] md:text-[80px] font-bold lg:text-[56px] xl:text-[80px] leading-0">Hackathon <span class="num">1.0</span></p>
+                <p class="text-[13px] leading-[32px] hero-small text-white md:text-[20px] w-[264px] md:w-[768px] lg:w-[429px] xl:w-[522px] text-center lg:text-left">Participate in getlinked tech Hackathon 2023 stand 
+                    a chance to win a Big prize</p>
+                <span class="flex absolute top-[87px] ml-[225px] justify-end md:right-[25px] md:top-[200px] lg:top-[182px] lg:right-[-43px] xl:top-[235px] xl:right-[-10px]">
+                    <img src="./images/chain.png" alt="" class="w-[32px] h-[32px] md:w-[50px] md:h-[50px] xl:w-[83px] xl:h-[83px]">
+                    <img src="./images/boom.png" alt="" class="w-[22px] h-[22px] md:w-[40px] md:h-[40px] mt-[5px] xl:w-[58px] xl:h-[58px] xl:mt-[18px]">
+                </span>
+                <button class="lg:mt-[20px] mt-[10px] rounded-[4px] bg text-white w-[152px] h-[46px] md:w-[172px] md:h-[53px] text-[16px] font-medium">Register</button>  
+                <div
+                class="flex justify-center xl:justify-start lg:justify-start xl:mt-[90px] lg:mt-[40px] mt-[20px]">
+                <span class="text-5xl timer mr-2 ml-[18px] lg:ml-0 text-white">00<b class="text-lg font-light">H</b> </span>
+                <span class="text-5xl timer mr-2 ml-[20px] text-white">00<b class="text-lg font-light">M</b></span>
+                <span class="text-5xl timer mr-2 ml-[15px] text-white">00<b class="text-lg font-light">S</b> </span>
+            </div>  
+            </div>
+            <div class="xl:w-[50%] lg:w-[60%] w-[100%] pt-[20px] lg:pt-[65px] relative bg-[url('/images/metrix.png')] bg-cover">
+                <img src="./images/vreality.png" alt="" class="xl:pr-[30px]">
+                <img src="./images/galaxy.svg" alt="" class="absolute top-0 xl:top-[50px] xl:right-[120px] lg:h-[500px]">
+                <img src="./images/eclipse.png" alt="" class="absolute top-0 hidden lg:block">
+            </div>
+        </div>
+    </section>
+    <section id="intro" class="xl:flex gap-5 lg:flex block xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
+        <div id="intro-left" class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
+            <img src="./images/sata gra.png" alt="" class="absolute w-[3%] left-0 top-20">
+            <img src="./images/thebigidea1.png" alt="">
+            <img src="./images/arrow.png" alt=""
+                class="absolute bottom-[-30px] xl:w-[49px] lg:w-[49px] xl:right-10 lg:right-10">
+        </div>
+        <div id="intro-right" class=" xl:w-1/2 lg:w-1/2 w-full flex flex-col justify-center mt-12">
+            <h1 class="intro-big text-xl xl:text-[32px] leading-10 font-bold text-white  pb-[10px] text-center xl:text-left lg:text-left  relative">
+                Introduction to
+                getlinked <br> <span class="text-[#D434FE]">tech Hackathon 1.0</span>
+                <img src="./images/star pu.png" alt="" class="absolute w-[4%] right-0 top-5 ">
+            </h1>
+            <p class="intro-small text-center text-[14px] text-white font-medium xl:text-left lg:text-left leading-7">Our tech hackathon is a melting pot of
+                visionaries,
+                and its purpose is as
+                clear as day: to shape the future. Whether you're a coding genius, a
+                design maverick, or a concept wizard, you'll have the chance to transform
+                your ideas into reality. Solving real-world problems, pushing the boundaries
+                of technology, and creating solutions that can change the world,
+                that's what we're all about!</p>
+        </div>
+    </section>
+    <section id="guidelines"
+            class=" flex gap-5 xl:flex-row lg:flex-row relative overflow-hidden flex-col-reverse xl:px-24 lg:px-20 md:px-16 px-4 pb-14 border-gray-700 border-b">
+            <div id="guidelines-left" class=" xl:w-1/2 lg:w-1/2 w-full flex flex-col justify-center">
+                <h1 class="guidelines-big text-20px font-bold xl:text-[32px] text-white pb-[10px] text-center xl:text-left lg:text-left  relative">
+                    Rules and<br> <span class="text-[#D434FE]">Guidelines</span>
+                    <img src="./images/star2.png" alt=""
+                        class="absolute w-[3%] left-0 xl:left-[300px] lg:left-[300px] lg:top-[-30px] top-[-100px]">
+                    <img src="./images/star.png" alt="" class="absolute w-[4%] right-0 top-[40px] lg:top-[250px] ">
+                </h1>
+                <p class="guidelines-small text-center xl:text-left lg:text-left leading-7 text-white text-[13px] md:text-[14px] font-medium xl:w-[535px]">Our tech hackathon is a melting pot of
+                    visionaries,
+                    and its purpose is as
+                    clear as day: to shape the future. Whether you're a coding genius, a
+                    design maverick, or a concept wizard, you'll have the chance to transform
+                    your ideas into reality. Solving real-world problems, pushing the boundaries
+                    of technology, and creating solutions that can change the world,
+                    that's what we're all about!
+                    <img src="./images/star3.png" alt=""
+                        class="absolute xl:hidden lg:hidden  w-[4%] left-20 bottom-[30px] ">
+                </p>
+
+            </div>
+
+            <img src="./images/firstecli.svg" alt="" class="xl:w-[800px] z-[-1]  lg:w-[700px] absolute top-[-10%] lg:top-[-40%] xl:left-0 lg:left-[10px] left-[-40px]">
+            <img src="./images/ecli.svg" alt="" class="xl:w-[800px] z-[-1]  lg:w-[600px] absolute top-[20%] lg:top-[10%] lg:right-[-30%] right-[-50%]">
+
+            <div id="guidelines-right" class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
+                <img src="./images/rules.svg" alt="">
+            </div>
+    </section>
+    <section id="judging"
+    class=" xl:flex lg:flex block gap-10 relative overflow-hidden xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b">
+    <div class=" xl:w-1/2 lg:w-1/2 flex justify-center xl:block lg:block relative">
+        <img src="./images/star pu (1).png" alt=""
+            class="absolute w-[3%] top-[-35px] xl:left-0 lg:left-0 xl:top-0 lg:top-0">
+        <img src="./images/star pu.png" alt=""
+            class="absolute w-[3%] top-28 left-[180px] xl:left-[300px] lg:left-[255px] xl:top-[300px] lg:top-[390px]">
+        <div
+            class="bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[100px] h-[100px] rounded-full hidden xl:block lg:block md:block absolute top-20 left-20 z-[-1]">
+        </div>
+        <img src="./images/canwefixit.svg" alt="" class="h-full flex items-center">
+    </div>
+
+    <img src="./images/firstecli.svg" alt="" class="xl:w-[800px] lg:w-[700px] absolute z-[-1] top-[10%] xl:top-[0] lg:top-[30%] xl:left-0 lg:left-[-5%] left-[-40px]">
+    <img src="./images/ecli.svg" alt="" class="xl:w-[800px] lg:w-[600px] absolute z-[-1] bottom-0 lg:bottom-[-20%] lg:right-[-25%] right-[-60%]">
+
+    <div class=" xl:w-1/2 lg:w-1/2 w-full flex flex-col justify-center relative">
+        <h1 class="cwfi-big text-[20px] xl:text-[32px] font-bold text-white pb-[10px] text-center xl:text-left lg:text-left  relative">
+            Judging Criteria <br> <span class="text-[#D434FE]">Key attributes</span>
+        </h1>
+        <img src="./images/star.png" alt=""
+            class="absolute w-[4%] right-0 bottom-5 xl:left-[-100px] lg:left-[-100px]  ">
+            <section>
+                <article class="mb-4">
+                    <h3 class="text-[13px] md:text-[16px] font-bold text-center text-white xl:text-left lg:text-left"><b class="text-[#FF26B9]">Innovation and
+                            Creativity:</b> <span class="text-[12px] md:text-[14px] font-medium">Evaluate the uniqueness and
+                        creativity of the
+                        solution. Consider whether it addresses a real-world problem in a novel
+                        way or introduces innovative features.</span></h3>
+                </article>
+                <article class="mb-4">
+                    <h3 class="text-[13px] text-center md:text-[16px] text-white font-bold xl:text-left lg:text-left"><b class="text-[#FF26B9]">Functionality:</b>
+                      <span class="text-[12px] md:text-[14px] font-medium"> Assess how well the solution works. Does it
+                        perform its
+                        intended functions effectively and without major issues? Judges would
+                        consider the completeness and robustness of the solution.</span> </h3>
+                </article>
+                <article class="mb-4">
+                    <h3 class="text-center text-[13px] md:text-[16px] text-white  font-bold xl:text-left lg:text-left"><b class="text-[#FF26B9]">Impact and
+                            Relevance:</b><span class="text-[12px] md:text-[14px] font-medium"> Determine the potential impact of the
+                        solution
+                        in the real world. Does it address a significant problem, and is it relevant
+                        to the target audience? Judges would assess the potential social,
+                        economic, or environmental benefits.</span></h3>
+                </article>
+                <article class="mb-4">
+                    <h3 class="text-center text-[13px] md:text-[16px] text-white font-bold xl:text-left lg:text-left"><b class="text-[#FF26B9]"> Technical
+                            Complexity:</b> <span class="text-[12px] md:text-[14px] font-medium"> Evaluate the technical sophistication
+                        of the solution.
+                        Judges would consider the complexity of the code, the use of advanced
+                        technologies or algorithms, and the scalability of the solution.</span></h3>
+                </article>
+                <article class="mb-4">
+                    <h3 class="text-center text-[13px] md:text-[16px] text-white font-bold xl:text-left lg:text-left"><b class="text-[#FF26B9]">Adherence to
+                            Hackathon Rules:</b><span class="text-[12px] md:text-[14px] font-medium"> Judges will Ensure that the team
+                        adhered
+                        to the rules and guidelines of the hackathon, including deadlines, use of
+                        specific technologies or APIs, and any other competition-specific requirements.</span></h3>
+                </article>
+                <a href=""
+                    class="grad-btn bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[132px] h-[43px] md:w-[172px] md:h-[53px] rounded flex justify-center items-center mx-auto xl:mx-0 lg:mx-0 text-white">Read
+                    More</a>
+            </section>
+        </div>
+    </section>    
+    <section id="questions"
+    class=" flex xl:flex-row lg:flex-row flex-col xl:px-24 lg:px-20 md:px-16 px-4 py-8 border-gray-700 border-b">
+    <div class=" xl:w-[40%] lg:w-[40%] w-full flex flex-col justify-center">
+        <h1 class="md:text-[32px] text-[28px] font-bold text-white pb-[10px] text-center xl:text-left lg:text-left qheader  relative">
+            Frequently Asked<br> <span class="text-[#D434FE] text-[28px] md:text-[32px] font-bold">Question</span>
+            <img src="./images/star pu.svg" alt="" class="absolute w-[4%] left-[-50px] top-0 ">
+        </h1>
+        <p class="text-white text-[12px] md:text-[14px] questi font-medium">We got answers to the questions that you might want to ask about <span class="text-[12px] md:text-[14px] text-white font-bold">getlinked Hackathon 1.0</span></p>
+        <ul class="FAQs-dropdown">
+            <li class=" border-b border-[#D434FE]" onclick="showFAQDropdown()" id="frequently-ask-dropdown">
+                <span class=" py-4 flex justify-between items-center ">
+                    <p class="text-[12px] md:text-[14px] text-white font-medium">Can I work on a project I started before the hackathon?</p> <b
+                        class="text-[#D434FE] text-2xl">+</b>
+                </span>
+            </li>
+            <li class=" border-b border-[#D434FE]" onclick="showFAQDropdown2()" id="frequently-ask-dropdown2">
+                <span class="py-4 flex justify-between items-center ">
+                    <p class="text-[12px] md:text-[14px] text-white font-medium">What happens if I need help during the hackathon?</p> <b
+                        class="text-[#D434FE] text-2xl">+</b>
+                </span>
+            </li>
+            <li class=" border-b border-[#D434FE]" onclick="showFAQDropdown3()" id="frequently-ask-dropdown3">
+                <span class=" py-4 flex justify-between items-center ">
+                    <p class="text-[12px] md:text-[14px] text-white font-medium">What happens if I don't have an idea for a project?</p> <b
+                        class="text-[#D434FE] text-2xl">+</b>
+                </span>   
+            </li>
+            <li class=" border-b border-[#D434FE]" onclick="showFAQDropdown4()" id="frequently-ask-dropdown4">
+                <span class=" py-4 flex justify-between items-center ">
+                    <p class="text-[12px] md:text-[14px] text-white font-medium">Can I join a team or do I have to come with one?</p> <b
+                        class="text-[#D434FE] text-2xl">+</b>
+                </span>
+            </li>
+            <li class=" border-b border-[#D434FE]" onclick="showFAQDropdown5()" id="frequently-ask-dropdown5">
+                <span class=" py-4 flex justify-between items-center ">
+                    <p class="text-[12px] md:text-[14px] text-white font-medium">What happens after the hackathon ends</p> <b class="text-[#D434FE] text-2xl">+</b>
+                </span>
+            </li>
+            <li class=" border-b border-[#D434FE]" onclick="showFAQDropdown6()" id="frequently-ask-dropdown6">
+                <span class=" py-4 flex justify-between items-center ">
+                    <p class="text-[12px] md:text-[14px] text-white font-medium">Can I work on a project I started before the hackathon?</p> <b
+                        class="text-[#D434FE] text-2xl">+</b>
+                </span>
+            </li>
+        </ul>
+    </div>
+    <div class=" xl:w-[60%] lg:w-[60%] flex justify-center xl:block lg:block relative pt-28">
+        <img src="./images/star-ash.svg" alt=""
+            class="absolute w-[3%] left-5 xl:left-[40px] lg:left-[40px] xl:bottom-[300px] lg:bottom-[300px] bottom-[140px]">
+        <img src="./images/star.png" alt="" class="absolute w-[4%] right-10 xl:right-28 lg:right-28 bottom-0 ">
+        <img src="./images/star pu.png" alt=""
+            class="absolute w-[3.5%] xl:left-28 lg:left-28 left-16 xl:top-56 lg:top-56 top-[200px]">
+        <img src="./images/star pu.png" alt=""
+            class="absolute w-[3.5%] top-20 xl:right-[350px] lg:right-[280px]">
+        <img src="./images/yunno(1).svg" alt=""
+            class="absolute xl:left-24 lg:left-24 left-10 xl:top-16 lg:top-16 top-24 w-[6%]">
+        <img src="./images/yuuno.svg" alt=""
+            class="absolute xl:top-6 lg:top-6 top-16 w-[8%] xl:right-[400px] lg:right-[300px] right-[190px]">
+        <img src="./images/yunno(1).svg" alt=""
+            class="absolute xl:right-[280px] lg:right-[200px] right-[120px] xl:top-16 lg:top-16 top-24 w-[6%]">
+        <img src="./images/thenooticer.svg" alt="">
+    </div>
+</section>
+<section id="timeline" class="xl:px-24 lg:px-20 md:px-16 px-4 py-14 relative">
+    <h1 class="text-20px md:text-[32px] font-bold text-white time pb-[10px] text-center">Timeline</h1>
+    <p class="text-center mb-12 text-[14px] font-medium">Here is the breakdown of the time we anticipate using for the upcoming event.
+    </p>
+    <img src="./images/star pu.png" alt=""
+        class="absolute w-[5%] lg:w-[2%] top-[160px] left-10 lg:left-[250px] lg:top-[150px]">
+    <img src="./images/star.png" alt=""
+        class="absolute w-[5%] lg:w-[2%] top-[50%] right-16 lg:right-[250px] lg:top-[43%]">
+    <img src="./images/star2.png" alt=""
+        class="absolute w-[5%] lg:w-[2%] left-2 bottom-10 lg:left-[180px] lg:bottom-32">
+    <div class="timetable">
+        <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+            <div class="col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
+                <h3 class="text-[#D434FE] font-bold">Hackathon Announcement</h3>
+                <p class="text-[12px] md:text-[16px] font-medium">The getlinked tech hackathon 1.0 is formally announced to the general public and
+                    teams begin to get ready to register</p>
+            </div>
+            <span
+                class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2  xl:w-[10%] lg:w-[10%]">
+                <span class="h-[120px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
+                <span
+                    class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px] bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">1</span>
+            </span>
+            <h3 class="text-[#D434FE] text-[12px] md:text-[24px]  font-bold col-start-2 xl:w-[45%] lg:w-[45%]">November 18, 2023</h3>
+        </section>
+        <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+            <h3 class="text-[#D434FE] text-[12px] md:text-[24px] font-bold col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
+                November 18, 2023</h3>
+            <span
+                class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                <span class="h-[120px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
+                <span
+                    class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">2</span>
+            </span>
+            <div class="col-start-2 row-start-1  xl:w-[45%] lg:w-[45%]">
+                <h3 class="text-[#D434FE] font-bold">Teams Registration begins</h3>
+                <p class="text-[12px] md:text-[16px] font-medium">Interested teams can now show their interest in the getlinked tech hackathon 1.0
+                    2023 by proceeding to register</p>
+            </div>
+        </section>
+        <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+            <div class="col-start-2 xl:w-[45%] lg:w-[45%] w-[90%] xl:text-right lg:text-right">
+                <h3 class="text-[#D434FE] font-bold">Teams Registration ends</h3>
+                <p class="text-[12px] md:text-[16px] font-medium">Interested Participants are no longer Allowed to register </p>
+            </div>
+            <span
+                class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                <span class="h-[77px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
+                <span
+                    class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">3</span>
+            </span>
+            <h3 class="text-[#D434FE] text-[12px] md:text-[24px] font-bold col-start-2 xl:w-[45%] lg:w-[45%]">November 18, 2023</h3>
+        </section>
+        <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+            <h3 class="text-[#D434FE] text-[12px] md:text-[24px]  font-bold col-start-2 xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right ">
+                November 18, 2023</h3>
+            <span
+                class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                <span class="h-[130px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
+                <span
+                    class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">4</span>
+            </span>
+            <div class="col-start-2 row-start-1  xl:w-[45%] lg:w-[45%]">
+                <h3 class="text-[#D434FE] font-bold">Announcement of the accepted teams and ideas</h3>
+                <p class="text-[12px] md:text-[16px] font-medium">All teams whom idea has been accepted into getlinked tech hackathon 1.0 2023 are
+                    formally announced</p>
+            </div>
+        </section>
+        <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+            <div class="col-start-2 xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
+                <h3 class="text-[#D434FE] font-bold">Getlinked Hackathon 1.0 Offically Begins</h3>
+                <p class="text-[12px] md:text-[16px] font-medium">Accepted teams can now proceed to build their ground breaking skill driven solutions
+                </p>
+            </div>
+            <span
+                class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                <span class="h-[120px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
+                <span
+                    class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">5</span>
+            </span>
+            <h3 class="text-[#D434FE] text-[12px] md:text-[24px] font-bold col-start-2 xl:w-[45%] lg:w-[45%] ">November 18, 2023</h3>
+        </section>
+        <section class="xl:flex lg:flex grid my-6 lg:items-center xl:items-center">
+            <h3 class="text-[#D434FE] text-[12px] md:text-[24px] font-bold col-start-2  xl:w-[45%] lg:w-[45%] xl:text-right lg:text-right">
+                November 18, 2023</h3>
+            <span
+                class="col-start-1 row-start-1 row-end-3 w-[10%] mr-2 flex flex-col items-center gap-2 xl:w-[10%] lg:w-[10%]">
+                <span class="h-[130px] w-[2.5px] lg:w-[5px] bg-[#D434FE] block "></span>
+                <span
+                    class="h-[24px] w-[24px] lg:h-[53px] lg:w-[53px]  bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] flex justify-center items-center rounded-full">6</span>
+            </span>
+            <div class="col-start-2 row-start-1 xl:w-[45%] lg:w-[45%]">
+                <h3 class="text-[#D434FE] font-bold">Demo Day</h3>
+                <p class="text-[12px] md:text-[16px] font-medium">Teams get the opportunity to pitch their projects to judges. The winner of the
+                    hackathon will also be announced on this day</p>
+            </div>
+        </section>
+    </div>
+    </section>
+    <section id="prize" class="lg:lg:px-20 xl:px-24 pt-14 pb-14 lg:pb-0 xl:pb-14 overflow-hidden bg-[#100b1f] relative">
+        <div class="flex flex-col lg:items-end items-center w-[100%] mt-4">
+            <h1 class=" text-xl xl:text-3xl md:text-2xl text-center lg:text-left lg:w-[50%]">Prices and
+                <br> <b class="text-[#D434FE]">Rewards</b>
+            </h1>
+            <p class="text-center text-[12px] font-medium lg:text-left lg:w-[50%]">Highlight of the prizes or rewards for winners and for
+                participants.</p>
+        </div>
+
+        
+        <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] lg:w-[700px] absolute  top-[10%] lg:top-[10%] xl:top-[10px] xl:left-0 lg:left-[-5%] left-[-40px]">
+        <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] lg:w-[600px] absolute  bottom-0 lg:bottom-[-20%] lg:right-[-25%] right-[-60%]">
+
+
+        <img src="./images/star pu.svg" alt="" class="absolute lg:top-[90px] lg:left-[300px] left-14 w-[2%] ">
+        <img src="./images/star pu.svg" alt="" class="absolute top-[130px] lg:right-[250px] right-14 w-[1.5%]">
+
+
+        <div class="flex flex-col xl:flex-row lg:flex-row lg:gap-5 ">
+            <div
+                class="lg:w-[45%] w-[100%] lg:h-[420px] h-[370px] pt-28 md:h-[500px] md:my-10 relative flex flex-col justify-center items-center lg:items-start">
+                <img src="./images/star.png" alt="" class="absolute top-[390px] lg:left-0 left-14 w-[4%]">
+                <img src="./images/star.png" alt=""
+                    class="absolute lg:top-2 top-[420px] lg:right-0 right-10 w-[3%]">
+                <img src="./images/trophy.svg" alt="" class="lg:relative lg:top-[-40%]">
+            </div>
+            <img src="./images/star3.png" alt=""
+            class="absolute lg:bottom-6 bottom-2 lg:right-[250px] right-24 w-[2%]">
+        <div class="lg:w-[55%] w-[100%] xl:mt-5 justify-center flex gap-3 relative pt-28 lg:pt-[140px]">
+            <img src="./images/star.png" alt="" class="absolute lg:top-20 lg:right-0 right-14 w-[4%]">
+            <div
+                class="w-[90px] h-[130px] lg:w-[152px] lg:h-[190px] xl:w-[200px] mt-4 xl:h-[250px] md:w-[202px] md:h-[270px] border-2 shrink-0 border-[#D434FE] bg-[#8f3aff20] relative rounded lg:rounded-xl text-center flex flex-col justify-end pb-4 lg:pb-[10px] xl:pb-[50px] md:pb-[50px]">
+                <img src="./images/silver.svg" alt=""
+                    class="absolute top-[-35%] lg:top-[-25%] xl:left-[12px] lg:top-[-35%]">
+                <h1 class="lg:text-2xl md:text-4xl font-bold">2nd</h1>
+                <h2 class="lg:text-xl md:text-2xl">Runner</h2>
+                <h1 class="lg:text-2xl md:text-2xl font-bold text-[#D434FE]">N300,000</h1>
+            </div>
+            <div
+                class="w-[90px] h-[155px] lg:w-[152px] lg:h-[210px] xl:w-[212px] xl:h-[300px] relative md:w-[202px] md:h-[280px] border-2 shrink-0 border-[#903AFF] bg-[#8f3aff20] rounded lg:rounded-xl text-center flex flex-col justify-end pb-4 lg:pb-[10px] xl:pb-[50px] md:pb-[50px]">
+                <img src="./images/gold.svg" alt=""
+                    class="absolute top-[-35%] xl:top-[-50%] lg:top-[-45%]">
+                    <span class="xl:mb-10">
+                <h1 class="lg:text-2xl md:text-4xl font-bold">1st</h1>
+                <h2 class="lg:text-xl md:text-2xl">Runner</h2>
+                <h1 class="lg:text-2xl md:text-2xl font-bold text-[#903AFF]">N400,000</h1>
+            </span>
+            </div>
+            <div
+                class="w-[90px] h-[130px] lg:w-[152px] lg:h-[190px] xl:w-[200px] mt-4 xl:h-[250px] md:w-[202px] md:h-[270px]  border-2 shrink-0 border-[#D434FE] bg-[#8f3aff20] relative rounded lg:rounded-xl text-center flex flex-col justify-end pb-4 lg:pb-[10px] xl:pb-[50px] md:pb-[50px]">
+                <img src="./images/bronze.svg" alt=""
+                    class="absolute top-[-35%] xl:top-[-25%] xl:left-[15px] lg:top-[-35%] xl:h-[170px]">
+                    <span class="pt-10">
+                <h1 class="lg:text-2xl md:text-4xl font-bold">3rd</h1>
+                <h2 class="lg:text-xl md:text-2xl">Runner</h2>
+                <h1 class="lg:text-2xl md:text-2xl font-bold text-[#D434FE]">N150,000</h1>
+            </span>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section id="partners" class="xl:px-24 lg:px-20 md:px-16 px-4 py-14 border-gray-700 border-b relative overflow-hidden">
+        <h1 class="text-center text-20px md:text-[32px] text-white font-bold mb-[22px] font-bold">Partners and Sponsors</h1>
+        <p class="text-center text-[12px] md:text-[14px] font-medium text-white">Getlinked Hackathon 1.0 is honored to have the following major companies as its
+            partners and sponsors
+        </p>
+        
+            <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px]  lg:w-[700px] absolute z-[-1] top-[-10%] lg:top-0 xl:top-[10px] xl:left-0 lg:left-[-10%] left-[-40px]">
+            <img src="./images/Purple-Lens-Flare.svg" alt="" class="xl:w-[800px] lg:w-[600px] absolute z-[-1]  bottom-[-10%] lg:bottom-[-20%] lg:right-[-25%] right-[-60%]">
+
+        <div
+            class="grid grid-cols-3 grid-rows-2 items-center relative border-2 rounded-xl border-[#D434FE] p-6 lg:p-[80px] xl:p-[120px] mt-[41px] sm:mt-[65px]">
+            <span class=" border-b-4 border-[#D434FE] flex justify-center items-center pb-4"><img
+                    src="./images/Liberty company logo white colour.svg" alt=""
+                    class="w-[50px] sm:w-[120px]"></span>
+            <span class=" border-b-4 border-x-4 border-[#D434FE] h-full flex justify-center items-center"><img
+                    src="./images/Liberty company logo white.svg" alt=""></span>
+            <span class=" border-b-4 border-[#D434FE] flex justify-center items-center pb-4"><img
+                    src="./images/Winwise logo White colour 1.svg" alt="" class="w-[50px] sm:w-[120px]"></span>
+            <span class=" border-[#D434FE] flex justify-center items-center pt-4"><img
+                    src="./images/wisper logo white.svg" alt="" class="w-[50px] sm:w-[120px]"></span>
+            <span class=" border-x-4 border-[#D434FE] h-full flex justify-center items-center">
+                <!-- <h1 class="lg:text-5xl sm:text-3xl">Pay<b class="text-[#00A3FF]">box</b></h1> -->
+                <img
+                    src="./images/Paybox.svg" alt="" class="w-[50px] sm:w-[120px]">
+            </span>
+            <span class=" border-[#D434FE] flex justify-center items-center">
+                <!-- <h1 class="vuzual-logo xl:text-5xl sm:text-3xl text-[13px] flex gap-2"><p>Vuzual</p> <span ><b>Plus</b> <div class="text-xs">Design Studios</div></span></h1> -->
+                <img
+                    src="./images/Vizual Plus.svg" alt="" class="lg:w-[231px] md:w-[180px] md:h-[45px] w-[50px] sm:w-[120px]">
+            </span>
+            <span
+            class="absolute w-[30px] h-[30px] sm:w-[50px] sm:h-[50px] bg-[#150E28] rounded-full left-[31%] lg:left-[35%]"></span>
+        <span
+            class="absolute w-[30px] h-[30px]  sm:w-[50px] sm:h-[50px] bg-[#150E28] rounded-full right-[31%] lg:right-[35%]"></span>
+        <img src="./images/star pu.svg" alt=""
+            class="absolute top-10 right-[40%] sm:bottom-16 w-[3%] sm:w-[2%]">
+        <img src="./images/star pu.svg" alt=""
+            class="absolute top-[-10%] left-[10%] sm:bottom-16 w-[3%] sm:w-[2%]">
+        <img src="./images/star.png" alt="" class="absolute bottom-2 right-[40%] sm:bottom-16 w-[3%] sm:w-[2%]">
+    </div>
+</section>
+<section id="privacy"
+class=" xl:flex lg:flex justify-center relative block gap-10 xl:px-24 lg:px-20 md:px-16 px-4 pt-14 pb-32 ">
+<div class="lg:w-[50%] w-full flex flex-col justify-center relative lg:pt-8 xl:pt-14">
+    <h1 class="text-xl xl:text-2xl font-black pb-[10px] text-center lg:text-left  relative">
+        Privacy Policy and <br> <span class="text-[#D434FE]">Terms</span>
+    </h1>
+    <p class="my-6  xl:my-6 lg:my-2 text-[12px] text-center lg:text-left font-medium md:text-[14px]">Last updated on September 12, 2023</p>
+    <p class=" text-center lg:text-left text-[12px] md:text-[14px] font-medium">Below are our privacy & policy, which outline a lot of goodies.
+        It’s our aim to always take of our
+        participant</p>
+    <!-- <img src="./images/star.png" alt="" class="absolute w-[4%] right-0 bottom-5 xl:left-[-100px] lg:left-[-100px]  "> -->
+    <section
+        class="border-2 rounded border-[#D434FE] bg-[#251a4860]  md:px-20 lg:px-4  px-2 py-10 mt-8 ">
+        <p class="text-center lg:text-left leading-7 xl:leading-9 text-[12px] md:text-[14px] font-medium">At getlinked tech Hackathon 1.0, we
+            value your privacy
+            and are committed to protecting your personal information.
+            This Privacy Policy outlines how we collect, use, disclose,
+            and safeguard your data when you participate in our tech
+            hackathon event. By participating in our event, you consent
+            to the practices described in this policy.
+        </p>
+        <h2 class="text-[#D434FE] text-[13px] md:text-[16px] font-bold mt-8 mb-4 lg:mt-4 lg:mb-2">Licensing Policy</h2>
+        <p class="text-[12px] md:text-[14px] font-bold"><b>Here are terms of our Standard License:</b></p>
+        <span class="flex items-start gap-4 mt-6">
+            <img src="./images/list terms.svg" alt="">
+            <p class="leading-7 xl:leading-9 text-[12px] md:text-[14px] font-medium">The Standard License grants you a non-exclusive right to
+                navigate and register for our event</p>
+        </span>
+        <span class="flex items-start gap-4 my-6">
+            <img src="./images/list terms.svg" alt="">
+            <p class=" leading-7 xl:leading-9 text-[12px] md:text-[14px] font-medium">You are licensed to use the item available at any free source
+                sites, for your project developement</p>
+        </span>
+        <a href=""
+            class="grad-btn bg-gradient-to-r from-[#FE34B9] via-purple-500 to-[#903AFF] w-[132px] h-[43px] md:w-[172px] md:h-[53px] rounded flex justify-center items-center mx-auto lg:mx-auto">Read
+            More</a>
+    </section>
+
+    
+    <img src="./images/firstecli.svg" alt="" class="xl:w-[800px]  lg:w-[700px] absolute z-[-1] bottom-[8%] lg:bottom-[-20%] lg:left-[-30%] left-[-40%]">
+
+
+    <img src="./images/star pu.png" alt=""
+        class="absolute w-[3%] left-[-4%] md:left-[-10%] bottom-[200px] ">
+    <img src="./images/star pu.png" alt="" class="absolute w-[3%] right-2 top-[200px] lg:top-10 ">
+</div>
+<div
+    class="lg:w-[50%] w-full mx-auto sm:w-[80%] mt-20 lg:mt-0 bg-[url('./images/vector.svg')] relative bg-contain bg-no-repeat">
+    <img src="./images/pri.svg" alt="" class="relative top-[120px] lg:top-[170px] xl:top-[230px]">
+    <img src="./images/star3.png" alt="" class="absolute right-0 bottom-0 lg:bottom-[30%] w-[4%]">
+    <img src="./images/star.png" alt="" class="absolute right-[20%] top-[14%] w-[4%]">
+    <img src="./images/star.png" alt="" class="absolute w-[3%] left-20">
+    <img src="./images/star pu.png" alt=""
+        class="absolute w-[3%] left-2 top-8 lg:left-36 lg:top-[60%] xl:top-[70%]">
+</div>
+</section>
+   </main>
+   <footer class="xl:px-24 lg:px-20 md:px-16 px-4 py-14 relative bg-[#100b1f]">
+    <section class="lg:flex justify-center block gap-10 pb-20 lg:pb-12">
+        <div class="lg:w-[50%]">
+            <div class="logo xl:text-3xl lg:text-2xl text-xl font-black">get<span
+                    class="text-[#D434FE]">linked</span></div>
+            <p class="mt-6 mb-10 lg:mb-20 lg:text-[14px] text-[12px] font-medium lg:pr-12">Getlinked Tech Hackathon is a
+                technology innovation program
+                established by a group of organizations with the aim of showcasing
+                young and talented individuals in the field of technology</p>
+            <div class="mb-10 text-[12px] font-medium"><span class="border-r-4 border-[#D434FE] pr-4">Term of Use</span> <span
+                    class="px-4">Privacy Policy</span></div>
+        </div>
+        <ul class="lg:w-[28%]  lg:text-[14px] xl:text-xl relative">
+            <h1 class="font-bold text-[#D434FE]">Useful Links</h1>
+            <li class="my-2 text-[12px] font-medium"><a href="">Overview</a></li>
+            <li class="my-2 text-[12px] font-medium"><a href="./timeline.html">Timeline</a></li>
+            <li class="my-2 text-[12px] font-medium"><a href="">FAQs</a></li>
+            <img src="./images/star (3).png" alt="" class="absolute right-20 top-[30%] w-[3%] lg:w-[5%]">
+            <li class="my-2 text-[12px] font-medium"><a href="./register.html">Register</a></li>
+            <li class="flex gap-4 items-center mt-2 mb-10"><b class="text-[#D434FE]">Follow Us</b><a
+                    href="" target="_blank"><i
+                        class="fa-brands fa-instagram text-[25px]"></i></a><a
+                    href="https://twitter.com/joelofIsheagu?s=08" target="_blank"><i
+                        class="fa-brands fa-x-twitter  text-[25px]"></i></a><a
+                    href="" target="_blank"><i
+                        class="fa-brands fa-facebook-f  text-[25px]"></i></a><a
+                    href="https://www.linkedin.com/in/joel-adigwe-9b1484276" target="_blank"><i
+                        class="fa-brands fa-linkedin-in text-[25px]"></i></a></li>
+        </ul>
+        <ul class="lg:w-[22%]  lg:text-[14px] xl:text-xl">
+            <h1 class="font-bold text-[#D434FE]">Contact Us</h1>
+            <li><a href="" class="flex gap-4 my-2"><i class="fa-solid fa-phone-volume text-xl"></i>
+                    <p class="text-[12px] font-medium">+234 8163 617 315</p>
+                </a></li>
+            <li class="flex gap-4 my-4"><i class="fa-solid fa-location-dot text-xl"></i>
+                    <p class="text-[12px] font-medium">5 Chief Woriji Close,<br> Rivers State</p></li>
+        </ul>
+    </section>
+    <img src="./images/star.png" alt="" class="absolute left-0 xl:left-4 top-20  w-[3%] lg:w-[2%]">
+    <img src="./images/star.png" alt="" class="absolute right-10 bottom-[25%] w-[3%] lg:w-[2%]">
+    <img src="./images/star pu.png" alt=""
+        class="absolute left-[50%] bottom-[13%] lg:bottom-[20%] w-[3%] lg:w-[2%]">
+    <p class="text-center text-[12px] font-medium">All rights reserved. © getlinked Ltd.</p>
+</footer>
+   <script src="script.js"></script>
+</body>
+</html>
